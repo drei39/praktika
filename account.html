@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="dark-theme">
+    <div class="background"></div>
+    <div class="container">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="logo-block">
+            <a href="index.html">
+              <img
+                id="site-logo"
+                src="media/img/logo_dark.svg"
+                alt="Моя семья – мой космос"
+              />
+            </a>
+          </div>
+          <h1>Личный кабинет</h1>
+        </div>
+      </header>
+
+      <section class="section-wrapper">
+        <h2>Добро пожаловать, [Ваше имя]</h2>
+        <p>Здесь вы можете управлять своими записями на конкурсы и профилем.</p>
+        <form class="account-form">
+          <label
+            >Выберите конкурс:
+            <select required>
+              <option value="">--Выбрать--</option>
+              <option value="contest1">Космическая викторина</option>
+              <option value="contest2">Старт ракеты</option>
+            </select>
+          </label>
+          <label
+            >Дата:
+            <input
+              type="date"
+              value="2024-07-08"
+              min="2024-07-08"
+              max="2024-07-08"
+              required
+            />
+          </label>
+          <label
+            >Время:
+            <input type="time" value="10:00" min="09:00" max="21:00" required />
+          </label>
+          <label
+            >Количество участников:
+            <input type="number" min="1" value="1" required />
+          </label>
+          <button>Записаться</button>
+        </form>
+
+        <button style="margin-top: 20px">Выйти</button>
+      </section>
+    </div>
+  </body>
+</html>

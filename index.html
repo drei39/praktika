@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя семья – мой космос</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="dark-theme">
+    <div class="starry-bg"></div>
+
+    <div class="container">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="logo-block">
+            <a href="index.html">
+              <img
+                id="site-logo"
+                src="media/img/logo_dark.svg"
+                alt="Моя семья – мой космос"
+              />
+            </a>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск..." aria-label="Поиск" />
+            <button class="search-btn" aria-label="Найти">
+              <img src="media/img/search.svg" alt="Поиск" />
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#about">О НАС</a></li>
+              <li><a href="#competitions">КОНКУРСЫ</a></li>
+              <li><a href="#footer">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <a href="login.html" class="login-btn">ВОЙТИ</a>
+          <button
+            class="icon-btn"
+            id="theme-switcher"
+            aria-label="Переключить тему"
+          >
+            <img
+              src="media/img/light_mode.svg"
+              alt="Светлая тема"
+              class="icon-light"
+              style="display: none"
+            />
+            <img
+              src="media/img/dark_mode.svg"
+              alt="Тёмная тема"
+              class="icon-dark"
+            />
+          </button>
+        </div>
+      </header>
+
+      <section id="about" class="about-section">
+        <div class="about-wrapper">
+          <img src="media/img/about.png" alt="О нас" class="about-image" />
+          <div class="glass-box">
+            <h1>ДОБРО ПОЖАЛОВАТЬ В ГАГАРИН – ВАШ ПОРТАЛ В КОСМОС!</h1>
+            <p>
+              Отмечаем 310-летие города Гагарина вместе с легендарным Юрием
+              Гагариным. Присоединяйтесь к нашему грандиозному празднованию «Моя
+              город – мой космос», участвуйте в конкурсах, наслаждайтесь
+              мероприятиями и откройте новые горизонты вместе с нами!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="welcome-video" class="welcome-section">
+        <h2>ПРИВЕТСТВИЕ ОТ ОРГАНИЗАТОРОВ</h2>
+        <div class="video-container">
+          <video controls>
+            <source src="media/video/hello.mp4" type="video/mp4" />
+            Ваш браузер не поддерживает видео.
+          </video>
+        </div>
+      </section>
+
+      <section id="competitions" class="competitions-section">
+        <h2>НАШИ КОНКУРСЫ</h2>
+        <div class="competitions-container">
+          <div class="competition-card">
+            <div class="card-image"></div>
+            <h3>НАЗВАНИЕ</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              rutrum, turpis sed ornare lobortis, lorem ante blandit turpis, sit
+              amet viverra nibh est sit amet turpis. Sed finibus.
+            </p>
+            <div class="rating">
+              <span>★★★★★</span>
+              <p>(299)</p>
+            </div>
+            <button
+              class="competition-btn"
+              onclick="window.location.href='description.html'"
+            >
+              ЗАПИСАТЬСЯ
+            </button>
+          </div>
+          <div class="competition-card">
+            <div class="card-image"></div>
+            <h3>НАЗВАНИЕ</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              rutrum, turpis sed ornare lobortis, lorem ante blandit turpis, sit
+              amet viverra nibh est sit amet turpis. Sed finibus.
+            </p>
+            <div class="rating">
+              <span>★★★★★</span>
+              <p>(299)</p>
+            </div>
+            <button
+              class="competition-btn"
+              onclick="window.location.href='description.html'"
+            >
+              ЗАПИСАТЬСЯ
+            </button>
+          </div>
+          <div class="competition-card">
+            <div class="card-image"></div>
+            <h3>НАЗВАНИЕ</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+              rutrum, turpis sed ornare lobortis, lorem ante blandit turpis, sit
+              amet viverra nibh est sit amet turpis. Sed finibus.
+            </p>
+            <div class="rating">
+              <span>★★★★★</span>
+              <p>(299)</p>
+            </div>
+            <button
+              class="competition-btn"
+              onclick="window.location.href='description.html'"
+            >
+              ЗАПИСАТЬСЯ
+            </button>
+          </div>
+        </div>
+        <div class="competitions-pagination">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section id="feedback" class="feedback-section">
+        <h2>ОТЗЫВЫ</h2>
+
+        <!-- Обёртка для двух отзывов -->
+        <div class="feedback-container">
+          <!-- Первый отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum,
+                turpis sed ornare lobortis, lorem ante blandit turpis, sit amet
+                viverra nibh est sit amet turpis. Sed finibus,
+              </p>
+            </div>
+          </div>
+
+          <!-- Разделительная линия -->
+          <hr />
+
+          <!-- Второй отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus, Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum,
+                turpis sed ornare lobortis, lorem ante blandit turpis, sit amet
+                viverra nibh est sit amet turpis. Sed finibus,
+              </p>
+            </div>
+          </div>
+
+          <!-- Разделительная линия -->
+          <hr />
+
+          <!-- Второй отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus, Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum,
+                turpis sed ornare lobortis, lorem ante blandit turpis, sit amet
+                viverra nibh est sit amet turpis. Sed finibus,
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка "Показать ещё" внизу -->
+        <button class="show-more-btn">ПОКАЗАТЬ ЕЩЁ</button>
+      </section>
+
+      <section id="subscribe" class="subscribe-section">
+        <h2>ПОДПИСКА НА НОВОСТИ</h2>
+        <form>
+          <input type="email" placeholder="Ваш email" required />
+          <label>
+            <input type="checkbox" required />
+            Я согласен на получение новостей о мероприятии
+          </label>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+
+      <section id="footer">
+        <footer class="site-footer">
+          <div class="footer-container">
+            <nav class="footer-nav">
+              <a href="index.html">Главная</a>
+              <a href="index-light.html">Главная-светлая</a>
+              <a href="registration.html">Регистрация</a>
+              <a href="competition.html">Конкурс</a>
+              <a href="account.html">Личный кабинет</a>
+              <a href="404.html">Страница не найдена</a>
+            </nav>
+            <div class="contact-info">
+              <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+              <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

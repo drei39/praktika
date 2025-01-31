@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body class="dark-theme">
+    <div class="background"></div>
+    <div class="container">
+      <header class="site-header">
+        <div class="header-container">
+          <div class="logo-block">
+            <a href="index.html">
+              <img
+                id="site-logo"
+                src="media/img/logo_dark.svg"
+                alt="Моя семья – мой космос"
+              />
+            </a>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск..." aria-label="Поиск" />
+            <button class="search-btn" aria-label="Найти">
+              <img src="media/img/search.svg" alt="Поиск" />
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html#about">О НАС</a></li>
+              <li><a href="index.html#competitions">КОНКУРСЫ</a></li>
+              <li><a href="#footer">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <a href="login.html" class="login-btn">ВОЙТИ</a>
+          <button
+            class="icon-btn"
+            id="theme-switcher"
+            aria-label="Переключить тему"
+          >
+            <img
+              src="media/img/light_mode.svg"
+              alt="Светлая тема"
+              class="icon-light"
+              style="display: none"
+            />
+            <img
+              src="media/img/dark_mode.svg"
+              alt="Тёмная тема"
+              class="icon-dark"
+            />
+          </button>
+        </div>
+      </header>
+
+      <div class="page-wrapper">
+        <div class="form-card">
+          <h2 class="form-title">АВТОРИЗАЦИЯ</h2>
+          <form class="authorization-form" action="#" method="post">
+            <div class="form-row single-column">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Введите ваш Email"
+                required
+              />
+            </div>
+            <div class="form-row single-column">
+              <label for="password">Пароль</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Введите ваш пароль"
+                required
+              />
+            </div>
+            <button type="submit" class="login-btn" style="margin-top: 20px">
+              ВОЙТИ
+            </button>
+            <p style="margin-top: 15px">
+              Ещё не зарегистрированы?
+              <a href="registration.html" style="color: #7ba4ff"
+                >Зарегистрироваться</a
+              >
+            </p>
+          </form>
+        </div>
+      </div>
+      <section id="footer">
+        <footer class="site-footer">
+          <div class="footer-container">
+            <nav class="footer-nav">
+              <a href="index.html">Главная</a>
+              <a href="index-light.html">Главная-светлая</a>
+              <a href="registration.html">Регистрация</a>
+              <a href="competition.html">Конкурс</a>
+              <a href="account.html">Личный кабинет</a>
+              <a href="404.html">Страница не найдена</a>
+            </nav>
+            <div class="contact-info">
+              <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+              <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+            </div>
+          </div>
+        </footer>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

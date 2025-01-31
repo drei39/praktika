@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Моя семья – мой космос | Описание конкурса</title>
+
+    <!-- Базовые стили для всего сайта -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Дополнительные стили именно для страницы description -->
+    <link rel="stylesheet" href="css/description.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Звёздный фон (при желании) -->
+    <div class="starry-bg"></div>
+
+    <div class="container">
+      <!-- ШАПКА САЙТА -->
+      <header class="site-header">
+        <div class="header-container">
+          <div class="logo-block">
+            <a href="index.html">
+              <img
+                id="site-logo"
+                src="media/img/logo_dark.svg"
+                alt="Моя семья – мой космос"
+              />
+            </a>
+          </div>
+          <div class="search-box">
+            <input type="text" placeholder="Поиск..." aria-label="Поиск" />
+            <button class="search-btn" aria-label="Найти">
+              <img src="media/img/search.svg" alt="Поиск" />
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#about">О НАС</a></li>
+              <li><a href="#competitions">КОНКУРСЫ</a></li>
+              <li><a href="#footer">КОНТАКТЫ</a></li>
+            </ul>
+          </nav>
+          <a href="login.html" class="login-btn">ВОЙТИ</a>
+          <button
+            class="icon-btn"
+            id="theme-switcher"
+            aria-label="Переключить тему"
+          >
+            <img
+              src="media/img/light_mode.svg"
+              alt="Светлая тема"
+              class="icon-light"
+              style="display: none"
+            />
+            <img
+              src="media/img/dark_mode.svg"
+              alt="Тёмная тема"
+              class="icon-dark"
+            />
+          </button>
+        </div>
+      </header>
+      <!-- /ШАПКА САЙТА -->
+
+      <!-- СЕКЦИЯ С ОПИСАНИЕМ КОНКУРСА -->
+      <section class="competition-header-section">
+        <div class="competition-image">
+          <!-- Заглушка для изображения конкурса -->
+          <img src="media/img/description.jpg" alt="Изображение конкурса" />
+
+          <div class="slider-dots">
+            <span class="slider-dot active"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <!-- Добавьте больше точек по необходимости -->
+          </div>
+        </div>
+        <div class="competition-info">
+          <h1>Название конкурса</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            rutrum, turpis sed ornare lobortis, lorem ante blandit turpis, sit
+            amet viverra nibh est sit amet turpis. Sed finibus.
+          </p>
+          <p><strong>Записалось человек:</strong> 299</p>
+          <p>
+            <strong>Рейтинг:</strong>
+            <!-- Пример звёзд, можно заменить своим SVG или символами -->
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+            <span class="star active">★</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- Слайдер для фотографий (по желанию) -->
+
+      <!-- СЕКЦИЯ "ОТЗЫВЫ" -->
+      <section id="feedback" class="feedback-section">
+        <h2>ОТЗЫВЫ</h2>
+
+        <!-- Обёртка для нескольких отзывов -->
+        <div class="feedback-container">
+          <!-- Первый отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus.
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Второй отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus, Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <!-- Третий отзыв -->
+          <div class="feedback-card">
+            <div class="feedback-avatar">
+              <img src="media/img/avatar.svg" alt="Аватар пользователя" />
+            </div>
+            <div class="feedback-content">
+              <h3>ИВАН ИВАНОВ</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                rutrum, turpis sed ornare lobortis, lorem ante blandit turpis,
+                sit amet viverra nibh est sit amet turpis. Sed finibus, Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Кнопка "Показать ещё" -->
+        <button class="show-more-btn">ПОКАЗАТЬ ЕЩЁ</button>
+      </section>
+      <!-- /СЕКЦИЯ "ОТЗЫВЫ" -->
+
+      <!-- СЕКЦИЯ "ПОДПИСКА НА НОВОСТИ" -->
+      <section id="subscribe" class="subscribe-section">
+        <h2>ПОДПИСКА НА НОВОСТИ</h2>
+        <form>
+          <input type="email" placeholder="Ваш email" required />
+          <label>
+            <input type="checkbox" required />
+            Я согласен на получение новостей о мероприятии
+          </label>
+          <button type="submit">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+      <!-- /СЕКЦИЯ "ПОДПИСКА" -->
+
+      <!-- ПОДВАЛ (FOOTER) -->
+      <section id="footer">
+        <footer class="site-footer">
+          <div class="footer-container">
+            <nav class="footer-nav">
+              <a href="index.html">Главная</a>
+              <a href="index-light.html">Главная-светлая</a>
+              <a href="registration.html">Регистрация</a>
+              <a href="competition.html">Конкурс</a>
+              <a href="account.html">Личный кабинет</a>
+              <a href="404.html">Страница не найдена</a>
+            </nav>
+            <div class="contact-info">
+              <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+              <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+            </div>
+          </div>
+        </footer>
+      </section>
+      <!-- /ПОДВАЛ -->
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
